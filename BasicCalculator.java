@@ -11,7 +11,7 @@ class BasicCalculator{
     
     public static void main(String sabuj[]){
         
-        JFrame frame1=new JFrame("BasicCalculator");
+        JFrame frame1=new JFrame("BasicCalculator"); //GUI
         frame1.setLayout(null);
         final JTextField textbox=new JTextField(10);
         textbox.setBounds(10,10,200,30);
@@ -29,7 +29,7 @@ class BasicCalculator{
         JButton add = new JButton("+");
         JButton sub = new JButton("-");
         JButton mul = new JButton("x");
-        JButton div = new JButton("÷");
+        JButton div = new JButton("Ã·");
         JButton dot = new JButton(".");
         JButton equal = new JButton("=");
         JButton clr = new JButton("c");
@@ -79,7 +79,7 @@ class BasicCalculator{
                     operation = 3;
                     textbox.setText("");
                 }
-                else if(keyPress.equals("÷")){
+                else if(keyPress.equals("Ã·")){
                     input1 = Double.parseDouble(textbox.getText());
                     operation = 4;
                     textbox.setText("");
